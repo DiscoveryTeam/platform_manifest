@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <!-- The Muppets' vendor -->
-  <project path="vendor/qcom/binaries" name="TheMuppets/proprietary_vendor_qcom_binaries" remote="github" revision="cm-14.1" />
-</manifest>

@@ -32,14 +32,6 @@
   <!-- Discovery ROM bootable -->
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="discovery" />
 
-  <!-- Discovery device tree -->
-  <project path="device/lge/hammerhead" name="device_lge_hammerhead" groups="pdk" revision="discovery7.1" remote="discovery" />
-  <project path="device/xiaomi/gemini" name="device_xiaomi_gemini" groups="pdk" remote="discovery" />
-  <project path="device/xiaomi/kenzo" name="device_xiaomi_kenzo" groups="pdk" remote="discovery" />
-  <project path="device/xiaomi/msm8956-common" name="device_xiaomi_msm8956-common" groups="pdk" remote="discovery" />
-  <project path="device/zuk/z2_plus" name="platform_device_zuk_z2_plus" groups="pdk" remote="discovery" />
-  <project path="kernel/zuk/msm8996" name="platform_kernel_zuk_msm8996" remote="discovery" />
-
   <!-- Other device's repo -->
   <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="discovery" />
 
@@ -115,9 +107,6 @@
   <!-- Discovery ROM vendor -->
   <project path="vendor/discovery" name="proprietary_vendor_discovery" remote="discovery" />
   <project path="vendor/codeaurora/telephony" name="proprietary_vendor_codeaurora_telephony" remote="discovery" />
-
-<!-- The Muppets' vendor -->
-  <include name="themuppets.xml"/>
 
 <!-- LineageOS -->
   <include name="lineage.xml"/>
