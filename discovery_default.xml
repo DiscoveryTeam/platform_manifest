@@ -39,6 +39,7 @@
   <project path="hardware/interfaces" name="platform_hardware_interfaces" groups="pdk" remote="discovery" />
   <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="discovery" />
   <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" groups="pdk" remote="discovery" />
+  <project path="hardware/qcom/bootctrl" name="platform_hardware_qcom_bootctrl" remote="discovery" groups="pdk" />
   <project path="hardware/ril" name="platform_hardware_ril" groups="pdk" remote="discovery" />
   <project path="hardware/ril-caf" name="platform_hardware_ril" groups="pdk" remote="discovery" revision="8.1-caf" />
   <project path="packages/apps/Camera2" name="platform_packages_apps_Camera2" groups="pdk-fs" remote="discovery" />
