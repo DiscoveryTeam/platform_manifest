@@ -21,27 +21,36 @@
 
   <project path="bionic" name="platform_bionic" groups="pdk" remote="discovery" />
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="discovery" />
-  <project path="external/connectivity" name="external_connectivity" groups="pdk" remote="gzosp" />
-  <project path="external/ebtables" name="platform_external_ebtables" groups="pdk" remote="discovery" />
+
+  <!-- Devices -->
+  <project path="device/qcom/common" name="device_qcom_common" remote="discovery"/>
+  <project name="Citrus-CAF/device_qcom_sepolicy" path="device/qcom/sepolicy" remote="github" revision="o8x" />
+
+  <!-- External -->
+  <project path="external/connectivity" name="LineageOS/android_external_connectivity" remote="github" revision="lineage-15.1" />
+  <project path="external/ebtables" name="platform/external/ebtables" remote="qcom" />
   <project path="external/exfat" name="platform_external_exfat" remote="discovery" />
   <project path="external/fuse" name="platform_external_fuse" remote="discovery" />
-  <project path="external/htop" name="platform_external_htop" remote="discovery" />
-  <project path="external/libncurses" name="platform_external_libncurses" remote="discovery" />
-  <project path="external/libnfc-nxp" name="external_libnfc-nxp" remote="gzosp" />
-  <project path="external/mksh" name="platform_external_mksh" groups="pdk" remote="discovery" />
-  <project path="external/nano" name="external_nano" remote="gzosp" />
+  <project path="external/json-c" name="platform/external/json-c" remote="qcom" />
+  <project name="LineageOS/android_external_libnfc-nxp" path="external/libnfc-nxp" remote="github" revision="lineage-15.1" />
+  <project name="LineageOS/android_external_ntfs-3g" path="external/ntfs-3g" remote="github" revision="lineage-15.1" />
   <project path="external/selinux" name="platform_external_selinux" groups="pdk" remote="discovery" />
   <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="discovery" />
+
+  <!-- Frameworks -->
   <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="discovery" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="discovery" />
   <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="discovery" />
   <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" groups="pdk" remote="discovery" />
+
+  <!-- Hardware -->
   <project path="hardware/interfaces" name="platform_hardware_interfaces" groups="pdk" remote="discovery" />
   <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="discovery" />
   <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" groups="pdk" remote="discovery" />
-  <project path="hardware/qcom/bootctrl" name="platform_hardware_qcom_bootctrl" remote="discovery" groups="pdk" />
   <project path="hardware/ril" name="platform_hardware_ril" groups="pdk" remote="discovery" />
   <project path="hardware/ril-caf" name="platform_hardware_ril" groups="pdk" remote="discovery" revision="8.1-caf" />
+
+  <!-- Packages -->
   <project path="packages/apps/Camera2" name="platform_packages_apps_Camera2" groups="pdk-fs" remote="discovery" />
   <project path="packages/apps/CarrierConfig" name="platform_packages_apps_CarrierConfig" groups="pdk-cw-fs,pdk-fs" remote="discovery" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="discovery" groups="pdk-fs" />
@@ -51,19 +60,23 @@
   <project path="packages/apps/Nfc" name="platform_packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="discovery" />
   <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" groups="pdk-cw-fs,pdk-fs" remote="discovery" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="discovery" />
-  <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" groups="pdk-fs" remote="discovery" />
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="discovery" />
   <project path="packages/providers/TelephonyProvider" name="platform_packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="discovery" />
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="discovery" />
   <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="discovery" />
+
+  <!-- System -->
   <project path="system/bt" name="platform_system_bt" groups="pdk" remote="discovery" />
   <project path="system/core" name="platform_system_core" groups="pdk" remote="discovery" />
+  <project path="system/extras" name="platform_system_extras" remote="discovery" />
   <project path="system/hwservicemanager" name="platform_system_hwservicemanager" groups="pdk" remote="discovery" />
   <project path="system/libhidl" name="platform_system_libhidl" groups="pdk" remote="discovery" />
   <project path="system/media" name="platform_system_media" groups="pdk" remote="discovery" />
   <project path="system/nfc" name="platform_system_nfc" groups="pdk" remote="discovery" />
   <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="discovery" />
   <project path="system/vold" name="platform_system_vold" groups="pdk" remote="discovery" />
+
+  <!-- Vendor -->
   <project path="vendor/discovery" name="proprietary_vendor_discovery" remote="discovery" />
   <project path="vendor/extras" name="platform_vendor_extras" remote="discovery" />
 
