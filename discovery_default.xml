@@ -24,7 +24,7 @@
 
   <!-- Devices -->
   <project path="device/qcom/common" name="device_qcom_common" remote="discovery"/>
-  <project name="Citrus-CAF/device_qcom_sepolicy" path="device/qcom/sepolicy" remote="github" revision="o8x" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="discovery" />
 
   <!-- External -->
   <project path="external/connectivity" name="LineageOS/android_external_connectivity" remote="github" revision="lineage-15.1" />
