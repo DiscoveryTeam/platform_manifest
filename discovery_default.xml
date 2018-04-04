@@ -81,6 +81,7 @@
   <project path="system/media" name="platform_system_media" groups="pdk" remote="discovery" />
   <project path="system/nfc" name="platform_system_nfc" groups="pdk" remote="discovery" />
   <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="discovery" />
+  <project path="system/tools/dtbtool" name="LineageOS/android_system_tools_dtbtool" remote="github" revision="lineage-15.1" />
   <project path="system/vold" name="platform_system_vold" groups="pdk" remote="discovery" />
 
   <!-- Vendor -->
