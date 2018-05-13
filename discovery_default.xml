@@ -58,6 +58,7 @@
   <project path="packages/apps/CarrierConfig" name="platform_packages_apps_CarrierConfig" groups="pdk-cw-fs,pdk-fs" remote="discovery" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="discovery" groups="pdk-fs" />
   <project path="packages/apps/DiscoverySettings" name="platform_packages_apps_DiscoverySettings" remote="discovery" />
+  <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" remote="discovery" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Gallery2" name="platform_packages_apps_Gallery2" groups="pdk-fs" remote="discovery" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" groups="pdk-fs" remote="discovery" />
   <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" groups="pdk-fs" remote="discovery" />
