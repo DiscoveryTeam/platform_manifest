@@ -13,7 +13,7 @@
 3. Init the repo into your project's folder
 
    ``` 
-   repo init -u https://github.com/DiscoveryTeam/platform_manifest -b 8.1 
+   repo init -u https://github.com/DiscoveryTeam/platform_manifest -b 9.0 
    ```
    
 4. Sync your project 

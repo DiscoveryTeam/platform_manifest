@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- Tesla remote -->
-  <remote  name="tesla"
-           fetch="https://github.com/TeslaRom-N/"
-           revision="n7.1.2" />
+  <remote  name="gzosp"
+           fetch="https://github.com/GZOSP"
+           sync-c="true"
+           sync-f="true"
+           sync-j="8"
+           revision="8.1" />
 
-  <!-- PixelExperience remote -->
-  <remote  name="pixelexperience"
-           fetch="https://github.com/PixelExperience/"
-           revision="oreo-mr1" />
-
-  <!-- DirtyUnicorns remote -->
-  <remote  name="du"
-           revision="o8x"
-           fetch="https://github.com/DirtyUnicorns/"
-           review="gerrit.dirtyunicorns.com" />
+  <remote  name="qcom"
+           fetch="https://source.codeaurora.org/quic/la/"
+           revision="refs/tags/LA.UM.6.4.r1-06900-8x98.0" />
 
   <!-- Hardware QCOM -->
   <project path="hardware/qcom/audio/default" name="platform_hardware_qcom_audio" groups="qcom,qcom_audio" remote="discovery" />
   <project path="hardware/qcom/audio-caf/apq8084" name="hardware_qcom_audio" groups="qcom,qcom_audio" remote="gzosp" revision="8.1-caf-8084" />
   <project path="hardware/qcom/audio-caf/msm8916" name="hardware_qcom_audio" groups="qcom,qcom_audio" remote="gzosp" revision="8.1-caf-8916" />
   <project path="hardware/qcom/audio-caf/msm8937" name="hardware_qcom_audio" groups="qcom,qcom_audio" remote="gzosp" revision="8.1-caf-8937" />
-  <project path="hardware/qcom/audio-caf/msm8952" name="platform_hardware_qcom_audio" remote="discovery" revision="8.1-caf-8952" />
+  <project path="hardware/qcom/audio-caf/msm8952" name="platform_hardware_qcom_audio" remote="discovery" revision="9.0-caf-8952" />
   <project path="hardware/qcom/audio-caf/msm8960" name="hardware_qcom_audio" groups="qcom,qcom_audio" remote="gzosp" revision="8.1-caf-8960" />
   <project path="hardware/qcom/audio-caf/msm8974" name="hardware_qcom_audio" groups="qcom,qcom_audio" remote="gzosp" revision="8.1-caf-8974" />
   <project path="hardware/qcom/audio-caf/msm8994" name="hardware_qcom_audio" groups="qcom,qcom_audio" remote="gzosp" revision="8.1-caf-8994" />
@@ -34,7 +29,7 @@
   <project path="hardware/qcom/display-caf/apq8084" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="gzosp" revision="8.1-caf-8084" />
   <project path="hardware/qcom/display-caf/msm8916" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="gzosp" revision="8.1-caf-8916" />
   <project path="hardware/qcom/display-caf/msm8937" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="gzosp" revision="8.1-caf-8937" />
-  <project path="hardware/qcom/display-caf/msm8952" name="platform_hardware_qcom_display" remote="discovery" revision="8.1-caf-8952" />
+  <project path="hardware/qcom/display-caf/msm8952" name="platform_hardware_qcom_display" remote="discovery" revision="9.0-caf-8952" />
   <project path="hardware/qcom/display-caf/msm8960" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="gzosp" revision="8.1-caf-8960" />
   <project path="hardware/qcom/display-caf/msm8974" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="gzosp" revision="8.1-caf-8974" />
   <project path="hardware/qcom/display-caf/msm8994" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="gzosp" revision="8.1-caf-8994" />
@@ -44,7 +39,7 @@
   <project path="hardware/qcom/media-caf/apq8084" name="hardware_qcom_media" groups="qcom" remote="gzosp" revision="8.1-caf-8084" />
   <project path="hardware/qcom/media-caf/msm8916" name="hardware_qcom_media" groups="qcom" remote="gzosp" revision="8.1-caf-8916" />
   <project path="hardware/qcom/media-caf/msm8937" name="hardware_qcom_media" groups="qcom" remote="gzosp" revision="8.1-caf-8937" />
-  <project path="hardware/qcom/media-caf/msm8952" name="platform_hardware_qcom_media" remote="discovery" revision="8.1-caf-8952" />
+  <project path="hardware/qcom/media-caf/msm8952" name="platform_hardware_qcom_media" remote="discovery" revision="9.0-caf-8952" />
   <project path="hardware/qcom/media-caf/msm8960" name="hardware_qcom_media" groups="qcom" remote="gzosp" revision="8.1-caf-8960" />
   <project path="hardware/qcom/media-caf/msm8974" name="hardware_qcom_media" groups="qcom" remote="gzosp" revision="8.1-caf-8974" />
   <project path="hardware/qcom/media-caf/msm8994" name="hardware_qcom_media" groups="qcom" remote="gzosp" revision="8.1-caf-8994" />
@@ -52,14 +47,18 @@
   <project path="hardware/qcom/media-caf/msm8998" name="Citrus-CAF/hardware_qcom_media" remote="github" revision="o8x-8998" />
   <project path="hardware/qcom/power" name="platform_hardware_qcom_power" groups="qcom" remote="discovery"/>
 
-  <!-- Ant Wireless -->
+  <!-- External -->
   <project path="external/ant-wireless/ant_native" name="platform_external_ant-wireless_ant_native" remote="discovery" />
-  <project name="platform/external/ant-wireless/ant_service" path="external/ant-wireless/ant_service" remote="qcom" />
+  <project path="external/ant-wireless/ant_service" name="platform_external_ant-wireless_ant_service" remote="discovery" />
   <project path="external/ant-wireless/antradio-library" name="platform_external_ant-wireless_antradio-library" remote="discovery" />
-
+  <project path="external/brctl" name="platform_external_brctl" remote="discovery" />
+  <project path="external/connectivity" name="LineageOS/android_external_connectivity" remote="github" revision="lineage-15.1" />
+  <project path="external/ebtables" name="platform/external/ebtables" remote="qcom" />
+  <project path="external/json-c" name="platform/external/json-c" remote="qcom" />
+  
   <!-- bt -->
   <project path="hardware/qcom/bt" name="platform_hardware_qcom_bt" groups="qcom" remote="discovery" />
-  <project path="hardware/qcom/bt-caf" name="platform_hardware_qcom_bt" groups="qcom" remote="discovery" revision="8.1-caf" />
+  <project path="hardware/qcom/bt-caf" name="platform_hardware_qcom_bt" groups="qcom" remote="discovery" revision="9.0-caf" />
 
   <!-- Gps -->
   <project path="hardware/qcom/gps" name="platform_hardware_qcom_gps" groups="qcom,qcom_gps" remote="discovery" />
@@ -69,17 +68,16 @@
 
   <!-- Wlan -->
   <project path="hardware/qcom/wlan" name="platform_hardware_qcom_wlan" groups="qcom_wlan" remote="discovery" />
-  <project path="hardware/qcom/wlan-caf" name="platform_hardware_qcom_wlan" remote="discovery" revision="8.1-caf" />
+  <project path="hardware/qcom/wlan-caf" name="platform_hardware_qcom_wlan" remote="discovery" revision="9.0-caf" />
 
   <!-- Vendors -->
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" remote="discovery" />
-  <project name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" remote="github" revision="lineage-15.1" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" remote="github" revision="lineage-15.1" />
   <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" remote="discovery" />
   <project path="vendor/qcom/opensource/fm" name="platform_vendor_qcom_opensource_fm" remote="discovery" />
-  <!--project path="vendor/qcom/opensource/dpm" name="vendor_qcom_opensource_dpm" remote="tesla" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="discovery" /-->
+  <!--project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="discovery" /-->
   <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" remote="discovery" />
-  <project name="platform/vendor/qcom-opensource/rcs-service" path="vendor/qcom/opensource/rcs-service" remote="qcom" />
-  <project name="Citrus-CAF/vendor_qcom_opensource_softap" path="vendor/qcom/opensource/softap" revision="o8x" remote="github" />
+  <project path="vendor/qcom/opensource/rcs-service" remote="qcom" name="platform/vendor/qcom-opensource/rcs-service" />
+  <project path="vendor/qcom/opensource/softap" name="Citrus-CAF/vendor_qcom_opensource_softap" revision="o8x" remote="github" />
 
 </manifest>
