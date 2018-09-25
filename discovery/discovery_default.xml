@@ -70,6 +70,9 @@
   <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="discovery" />
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="discovery" />
   
+  <!-- Prebuilts -->
+  <project path="prebuilts/build-tools" name="platform_prebuilts_build-tools" remote="discovery" />
+
   <!-- System -->
   <project path="system/bt" name="platform_system_bt" groups="pdk" remote="discovery" />
   <project path="system/core" name="platform_system_core" groups="pdk" remote="discovery" />
