@@ -53,7 +53,6 @@
   <project path="external/ant-wireless/antradio-library" name="platform_external_ant-wireless_antradio-library" remote="discovery" />
   <project path="external/brctl" name="platform_external_brctl" remote="discovery" />
   <project path="external/connectivity" name="LineageOS/android_external_connectivity" remote="github" revision="lineage-16.0" />
-  <project path="external/ebtables" name="platform/external/ebtables" remote="qcom" />
   <project path="external/json-c" name="platform/external/json-c" remote="qcom" />
   
   <!-- bt -->
