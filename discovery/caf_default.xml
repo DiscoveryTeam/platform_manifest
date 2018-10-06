@@ -52,7 +52,7 @@
   <project path="external/ant-wireless/ant_service" name="platform_external_ant-wireless_ant_service" remote="discovery" />
   <project path="external/ant-wireless/antradio-library" name="platform_external_ant-wireless_antradio-library" remote="discovery" />
   <project path="external/brctl" name="platform_external_brctl" remote="discovery" />
-  <project path="external/connectivity" name="LineageOS/android_external_connectivity" remote="github" revision="lineage-15.1" />
+  <project path="external/connectivity" name="LineageOS/android_external_connectivity" remote="github" revision="lineage-16.0" />
   <project path="external/ebtables" name="platform/external/ebtables" remote="qcom" />
   <project path="external/json-c" name="platform/external/json-c" remote="qcom" />
   
@@ -72,7 +72,7 @@
 
   <!-- Vendors -->
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" remote="discovery" />
-  <project path="vendor/qcom/opensource/cryptfs_hw" name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" remote="github" revision="lineage-15.1" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" remote="github" revision="lineage-16.0" />
   <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" remote="discovery" />
   <project path="vendor/qcom/opensource/fm" name="platform_vendor_qcom_opensource_fm" remote="discovery" />
   <!--project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="discovery" /-->
