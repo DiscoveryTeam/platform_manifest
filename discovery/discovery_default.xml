@@ -82,6 +82,5 @@
 
   <!-- Vendor -->
   <project path="vendor/discovery" name="proprietary_vendor_discovery" remote="discovery" />
-  <project path="vendor/extras" name="platform_vendor_extras" remote="discovery" />
-
+  
 </manifest>
